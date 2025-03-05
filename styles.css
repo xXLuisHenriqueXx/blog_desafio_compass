@@ -49,7 +49,7 @@
 
     header {
       position: relative;
-      z-index: 2;
+      z-index: 3;
 
       nav {
         display: flex;
@@ -97,6 +97,45 @@
             height: 1.875rem;
           }
         }
+
+        #menu-items {
+          display: none;
+          z-index: 99;
+          position: absolute;
+          top: -5.25rem;
+          right: -3rem;
+          width: 10rem;
+          background-color: var(--primary-color);
+          border-radius: 0.25rem;
+          padding: 1rem;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+              list-style: none;
+              text-align: center;
+
+              &:not(:last-child) {
+                border-bottom: 1px solid var(--secondary-color-inactive);
+                padding-bottom: 1rem;
+              }
+
+              a {
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--secondary-color-inactive);
+                text-decoration: none;
+                transition: 0.5s color;
+
+                &:hover {
+                  color: var(--secondary-color);
+                }
+              }
+            }
+          }
+        }
       }
 
       article {
@@ -141,13 +180,19 @@
 
         &:hover {
           cursor: pointer;
-          background-color: var(--secondary-color-inactive);
+          background-color: var(--background-opacity-color);
         }
 
         img {
           width: 1.375rem;
           height: 1.375rem;
         }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      article {
+        max-width: 60%;
       }
     }
   }
