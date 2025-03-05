@@ -1,0 +1,21 @@
+@layer variables {
+  :root {
+    --primary-color: #ffffff;
+    --primary-color-inactive: #ffffffcc;
+    --secondary-color: #101828;
+    --secondary-color-inactive: #10182880;
+    --gradient-color: #233250;
+    --icon-social-color: #98a2b3;
+    --quinary-color: #667085;
+    --label-form-color: #344054;
+    --info-footer-color: #cecece;
+  }
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
