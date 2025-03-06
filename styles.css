@@ -59,7 +59,7 @@
       position: relative;
       z-index: 3;
 
-      nav {
+      & > nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -189,7 +189,7 @@
         flex-direction: row;
         justify-content: space-between;
 
-        nav {
+        & > nav {
           & > ul {
             display: flex;
           }
@@ -286,5 +286,13 @@
         max-width: 40%;
       }
     }
+  }
+}
+
+@layer shop {
+  .shoppage {
+    position: relative;
+    width: 100%;
+    padding: 2.5rem 1rem;
   }
 }

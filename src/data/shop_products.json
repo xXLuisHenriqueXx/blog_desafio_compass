@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Multivitamin For Cat",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/multivitamin_cat.png",
+      "categories": ["cat"]
+    },
+    {
+      "id": 2,
+      "name": "Cat Food",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/cat_food.png",
+      "categories": ["cat"]
+    },
+    {
+      "id": 3,
+      "name": "Dog Food",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/dog_food.png",
+      "categories": ["dog"]
+    },
+    {
+      "id": 4,
+      "name": "Pet Plate",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/pet_plate.png",
+      "categories": ["cat", "dog"]
+    },
+    {
+      "id": 5,
+      "name": "Bird Water",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/bird_water.png",
+      "categories": ["bird"]
+    },
+    {
+      "id": 6,
+      "name": "Dog Water",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/dog_water.png",
+      "categories": ["dog"]
+    },
+    {
+      "id": 7,
+      "name": "Fish Food",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/fish_food.png",
+      "categories": ["fish"]
+    },
+    {
+      "id": 8,
+      "name": "Bird Food",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/bird_food.png",
+      "categories": ["bird"]
+    },
+    {
+      "id": 9,
+      "name": "Fish Aquarium",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/fish_aquarium.png",
+      "categories": ["fish"]
+    },
+    {
+      "id": 10,
+      "name": "Cat Toy",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+      "price": 15000,
+      "image": "../assets/cat_toy.png",
+      "categories": ["cat"]
+    }
+  ]
+}
