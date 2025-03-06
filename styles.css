@@ -639,9 +639,10 @@
         align-items: center;
         gap: 0.938rem;
 
-        img {
+        svg {
           width: 1.5rem;
           height: 1.5rem;
+          fill: var(--secondary-color);
         }
 
         h1 {
@@ -730,7 +731,7 @@
           width: 100%;
           height: 100%;
           padding: 1rem;
-          gap: 2rem;
+          gap: 1.25rem;
           background-color: var(--background-product-info);
           border-radius: 0.313rem;
           opacity: 0;
@@ -757,7 +758,7 @@
           }
 
           & > button {
-            width: 50%;
+            width: 60%;
             align-self: center;
             padding: 0.5rem 0.25rem;
             background: linear-gradient(
@@ -842,6 +843,23 @@
       .adopt {
         grid-column: span 2;
         aspect-ratio: 2/1;
+
+        @media screen and (min-width: 425px) {
+          .service-info {
+            & > div {
+              align-self: center;
+              width: 60%;
+            }
+          }
+        }
+
+        @media screen and (min-width: 1024px) {
+          .service-info {
+            & > div {
+              width: 100%;
+            }
+          }
+        }
       }
 
       @media screen and (min-width: 1024px) {
