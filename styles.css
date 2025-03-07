@@ -654,7 +654,7 @@
 
       @media screen and (min-width: 768px) {
         div {
-          img {
+          svg {
             width: 2rem;
             height: 2rem;
           }
@@ -904,9 +904,10 @@
         align-items: center;
         gap: 0.938rem;
 
-        img {
+        svg {
           width: 1.5rem;
           height: 1.5rem;
+          fill: var(--secondary-color);
         }
 
         h1 {
@@ -918,7 +919,7 @@
 
       @media screen and (min-width: 768px) {
         div {
-          img {
+          svg {
             width: 2rem;
             height: 2rem;
           }
@@ -964,6 +965,7 @@
         display: none;
         position: relative;
         max-width: 50%;
+        max-height: 48rem;
 
         @media screen and (min-width: 1440px) {
           display: block;
