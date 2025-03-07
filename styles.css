@@ -1306,10 +1306,19 @@
               align-items: center;
               gap: 0.781rem;
 
-              svg {
+              & > svg {
                 width: 0.938rem;
                 height: 0.938rem;
                 fill: var(--icon-social-color);
+              }
+
+              @media screen and (min-width: 768px) {
+                gap: 1.25rem;
+
+                & > svg {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                }
               }
             }
           }
