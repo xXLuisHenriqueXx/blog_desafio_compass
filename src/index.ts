@@ -1,10 +1,9 @@
 import { HamburguerMenuController } from "./classes/HamburguerMenuController";
 import { ProductCardsController } from "./classes/ProductCardsController";
+import { ServicesCardsController } from "./classes/ServicesCardsController";
 
 document.addEventListener("DOMContentLoaded", () => {
   new HamburguerMenuController();
-});
-
-document.addEventListener("DOMContentLoaded", () => {
   new ProductCardsController();
+  new ServicesCardsController();
 });

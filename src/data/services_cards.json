@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Grooming",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
+      "image": "grooming.png"
+    },
+    {
+      "id": 2,
+      "name": "Boarding",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
+      "image": "boarding.png"
+    },
+    {
+      "id": 3,
+      "name": "Training",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
+      "image": "training.png"
+    },
+    {
+      "id": 4,
+      "name": "Veterinary",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
+      "image": "veterinary.png"
+    },
+    {
+      "id": 5,
+      "name": "Adoption",
+      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
+      "image": "adoption.png"
+    }
+  ]
+}
