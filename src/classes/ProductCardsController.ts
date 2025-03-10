@@ -1,7 +1,7 @@
-import type { Product } from "../entities/Product";
+import type { IProduct } from "../entities/Product";
 
 export class ProductCardsController {
-  private products: Product[] = [];
+  private products: IProduct[] = [];
   private currentFilter = "Random";
   private productsContainer: HTMLElement;
   private searchInput: HTMLInputElement;
@@ -56,7 +56,7 @@ export class ProductCardsController {
     selectedItem.classList.add("active");
   }
 
-  private filterProducts(): Product[] {
+  private filterProducts(): IProduct[] {
     let filteredProducts = this.products;
 
     const searchValue = this.searchInput.value.trim().toLowerCase();

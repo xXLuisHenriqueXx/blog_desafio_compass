@@ -1,4 +1,5 @@
 import { ContactCardsController } from "./classes/ContactCardsController";
+import { ContactFormController } from "./classes/ContactFormController";
 import { HamburguerMenuController } from "./classes/HamburguerMenuController";
 import { ProductCardsController } from "./classes/ProductCardsController";
 import { ServicesCardsController } from "./classes/ServicesCardsController";
@@ -10,4 +11,5 @@ document.addEventListener("DOMContentLoaded", () => {
   new ServicesCardsController();
   new TeamCardsController();
   new ContactCardsController();
+  new ContactFormController();
 });

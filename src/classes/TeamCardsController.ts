@@ -1,7 +1,7 @@
-import type { TeamMember } from "../entities/TeamMember";
+import type { ITeamMember } from "../entities/TeamMember";
 
 export class TeamCardsController {
-  private members: TeamMember[] = [];
+  private members: ITeamMember[] = [];
   private membersContainer: HTMLElement;
 
   constructor() {

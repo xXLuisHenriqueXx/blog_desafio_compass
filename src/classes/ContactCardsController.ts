@@ -1,7 +1,7 @@
-import type { Contact } from "../entities/Contact";
+import type { IContact } from "../entities/Contact";
 
 export class ContactCardsController {
-  private contacts: Contact[] = [];
+  private contacts: IContact[] = [];
   private contactsContainer: HTMLElement;
 
   constructor() {

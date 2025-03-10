@@ -1,7 +1,7 @@
-import type { Service } from "../entities/Service";
+import type { IService } from "../entities/Service";
 
 export class ServicesCardsController {
-  private services: Service[] = [];
+  private services: IService[] = [];
   private servicesContainer: HTMLElement;
 
   constructor() {
