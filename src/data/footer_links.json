@@ -1,0 +1,69 @@
+{
+  "footerlinks": [
+    {
+      "id": 1,
+      "title": "Shop",
+      "links": [
+        {
+          "1": "Pet Adoption",
+          "2": "Nutrition",
+          "3": "Pet Care",
+          "4": "Pet Food",
+          "5": "Pricing"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Company",
+      "links": [
+        {
+          "1": "About us",
+          "2": "Careers",
+          "3": "Press",
+          "4": "News",
+          "5": "Contact"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Services",
+      "links": [
+        {
+          "1": "Grooming",
+          "2": "Boarding",
+          "3": "Training",
+          "4": "Veterinary",
+          "5": "Support"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Social",
+      "links": [
+        {
+          "1": "Twitter",
+          "2": "Linkedin",
+          "3": "Facebook",
+          "4": "AngelList",
+          "5": "Dribbble"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Legal",
+      "links": [
+        {
+          "1": "Terms",
+          "2": "Privacy",
+          "3": "Cookies",
+          "4": "Licenses",
+          "5": "Settings"
+        }
+      ]
+    }
+  ]
+}
