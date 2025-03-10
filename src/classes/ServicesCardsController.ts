@@ -18,9 +18,10 @@ export class ServicesCardsController {
 
   private async loadServices(): Promise<void> {
     try {
-      const response = await fetch("../src/data/services_cards.json");
-      const data = await response.json();
-      this.services = data.services;
+      const { services } = await fetch("../src/data/services_cards.json").then(
+        response => response.json()
+      );
+      this.services = services;
     } catch (error) {
       console.error("Erro ao carregar os serviços", error);
     }

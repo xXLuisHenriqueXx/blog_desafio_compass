@@ -24,9 +24,10 @@ export class ProductCardsController {
 
   private async loadProducts(): Promise<void> {
     try {
-      const response = await fetch("../src/data/shop_products.json");
-      const data = await response.json();
-      this.products = data.products;
+      const { products } = await fetch("../src/data/shop_products.json").then(
+        response => response.json()
+      );
+      this.products = products;
     } catch (error) {
       console.error("Erro ao carregar os produtos", error);
     }

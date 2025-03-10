@@ -4,31 +4,31 @@
       "id": 1,
       "name": "Grooming",
       "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-      "image": "grooming.png"
+      "image": "services/grooming.png"
     },
     {
       "id": 2,
       "name": "Boarding",
       "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-      "image": "boarding.png"
+      "image": "services/boarding.png"
     },
     {
       "id": 3,
       "name": "Training",
       "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-      "image": "training.png"
+      "image": "services/training.png"
     },
     {
       "id": 4,
       "name": "Veterinary",
       "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-      "image": "veterinary.png"
+      "image": "services/veterinary.png"
     },
     {
       "id": 5,
       "name": "Adoption",
       "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-      "image": "adoption.png"
+      "image": "services/adoption.png"
     }
   ]
 }

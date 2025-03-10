@@ -1,0 +1,28 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Dr. Olivia Rhye",
+      "title": "Senior Veterinarian",
+      "image": "team/olivia.png"
+    },
+    {
+      "id": 2,
+      "name": "Phoenix Baker",
+      "title": "Asst. Veterinarian",
+      "image": "team/phoenix.png"
+    },
+    {
+      "id": 3,
+      "name": "Lana Steiner",
+      "title": "Resident Veterinarian",
+      "image": "team/lana.png"
+    },
+    {
+      "id": 4,
+      "name": "Demi Wilkinson",
+      "title": "Intern Veterinarian",
+      "image": "team/demi.png"
+    }
+  ]
+}
