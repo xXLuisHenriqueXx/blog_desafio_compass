@@ -21,6 +21,6 @@ export class HamburguerMenuController {
 
   private toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
-    this.hamburguerMenuItems.style.display = this.isMenuOpen ? "block" : "none";
+    this.hamburguerMenuItems.style.display = this.isMenuOpen ? "flex" : "none";
   }
 }
