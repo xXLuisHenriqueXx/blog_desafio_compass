@@ -98,7 +98,7 @@
             font-weight: 600;
             color: var(--primary-color-inactive);
             text-decoration: none;
-            transition: 0.5s color;
+            transition: 0.3s color;
 
             &:hover {
               color: var(--hover-link-color);
@@ -155,7 +155,7 @@
               font-weight: 600;
               color: var(--primary-color-inactive);
               text-decoration: none;
-              transition: 0.5s color;
+              transition: 0.3s color;
 
               &:hover {
                 color: var(--hover-link-color);
@@ -186,7 +186,7 @@
       padding: 0.625rem 1.1125rem;
       font-size: 16px;
       font-weight: 600;
-      transition: 0.5s all;
+      transition: 0.3s all;
 
       &:hover {
         cursor: pointer;
@@ -367,7 +367,7 @@
         font-size: 16px;
         font-weight: 600;
         color: var(--primary-color);
-        transition: 0.5s all;
+        transition: 0.3s all;
 
         &:hover {
           cursor: pointer;
@@ -380,7 +380,7 @@
           width: 1.375rem;
           height: 1.375rem;
           fill: var(--primary-color);
-          transition: 0.5s fill;
+          transition: 0.3s fill;
         }
 
         &:hover svg {
@@ -518,7 +518,7 @@
             font-size: 15px;
             font-weight: 600;
             color: var(--nav-shop-color);
-            transition: 0.5s color;
+            transition: 0.3s color;
 
             &:hover {
               cursor: pointer;
@@ -536,7 +536,7 @@
             border: 2px solid var(--secondary-color);
             border-radius: 8px;
             color: var(--primary-color);
-            transition: 0.5s box-shadow;
+            transition: 0.3s box-shadow;
 
             &:hover {
               cursor: pointer;
@@ -605,7 +605,7 @@
             background-color: var(--background-product-info);
             border-radius: 0.625rem;
             opacity: 0;
-            transition: 0.5s opacity;
+            transition: 0.3s opacity;
             pointer-events: none;
 
             & > div:nth-child(1) {
@@ -659,7 +659,7 @@
                 font-size: 20px;
                 font-weight: 400;
                 color: var(--primary-color);
-                transition: 0.5s all;
+                transition: 0.3s all;
 
                 &:hover {
                   cursor: pointer;
@@ -696,7 +696,7 @@
         text-decoration: none;
         font-size: 20px;
         font-weight: 600;
-        transition: 0.5s color;
+        transition: 0.3s color;
 
         &:hover {
           color: var(--hover-link-color);
@@ -745,6 +745,7 @@
           font-size: 25px;
           font-weight: 700;
           color: var(--primary-color);
+          transition: 0.3s all;
         }
 
         @media screen and (min-width: 768px) {
@@ -781,7 +782,7 @@
           background-color: var(--background-product-info);
           border-radius: 0.313rem;
           opacity: 0;
-          transition: 0.5s opacity;
+          transition: 0.3s opacity;
           pointer-events: none;
 
           & > div {
@@ -817,7 +818,7 @@
             font-size: 10px;
             font-weight: 400;
             color: var(--primary-color);
-            transition: 0.5s all;
+            transition: 0.3s all;
 
             &:hover {
               cursor: pointer;
@@ -1065,7 +1066,7 @@
           font-size: 10px;
           font-weight: 400;
           color: var(--primary-color);
-          transition: 0.5s all;
+          transition: 0.3s all;
 
           &:hover {
             cursor: pointer;
@@ -1184,6 +1185,7 @@
               width: 0.938rem;
               height: 0.938rem;
               fill: var(--icon-social-color);
+              transition: 0.3s fill;
 
               &:hover {
                 cursor: pointer;
@@ -1482,7 +1484,7 @@
           font-size: 10px;
           font-weight: 400;
           color: var(--primary-color);
-          transition: 0.5s all;
+          transition: 0.3s all;
 
           &:hover {
             cursor: pointer;
@@ -1593,7 +1595,7 @@
             font-size: 14px;
             font-weight: 600;
             color: var(--label-form-color);
-            transition: 0.5s all;
+            transition: 0.3s all;
 
             &:hover {
               cursor: pointer;
@@ -1688,7 +1690,7 @@
               font-weight: 700;
               color: var(--primary-color);
               text-decoration: none;
-              transition: 0.5s all;
+              transition: 0.3s all;
 
               &:hover {
                 cursor: pointer;
@@ -1702,7 +1704,7 @@
                 font-size: 16px;
                 font-weight: 600;
                 color: var(--info-footer-color);
-                transition: 0.5s all;
+                transition: 0.3s all;
 
                 &:first-child {
                   margin-top: 1rem;
@@ -1761,7 +1763,7 @@
           width: 1.5rem;
           height: 1.5rem;
           fill: var(--info-footer-color);
-          transition: 0.5s fill;
+          transition: 0.3s fill;
 
           &:hover {
             cursor: pointer;
