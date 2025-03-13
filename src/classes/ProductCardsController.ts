@@ -5,6 +5,7 @@ export class ProductCardsController {
   private currentFilter = "Random";
   private productsContainer: HTMLElement;
   private searchInput: HTMLInputElement;
+  private searchInputMobile: HTMLInputElement;
 
   constructor() {
     this.productsContainer = document.querySelector(
@@ -12,6 +13,9 @@ export class ProductCardsController {
     ) as HTMLElement;
     this.searchInput = document.querySelector(
       "#search-shop"
+    ) as HTMLInputElement;
+    this.searchInputMobile = document.querySelector(
+      "#search-shop-mobile"
     ) as HTMLInputElement;
     this.initialize();
   }
@@ -46,6 +50,10 @@ export class ProductCardsController {
     this.searchInput.addEventListener("input", () => {
       this.render();
     });
+
+    this.searchInputMobile.addEventListener("input", () => {
+      this.render();
+    });
   }
 
   private updateActiveFilter(selectedItem: HTMLElement): void {
@@ -66,6 +74,13 @@ export class ProductCardsController {
       );
     }
 
+    const searchValueMobile = this.searchInputMobile.value.trim().toLowerCase();
+    if (searchValueMobile) {
+      filteredProducts = filteredProducts.filter(product =>
+        product.name.toLowerCase().includes(searchValueMobile)
+      );
+    }
+
     if (this.currentFilter !== "Random") {
       filteredProducts = filteredProducts.filter(product =>
         product.categories.includes(this.currentFilter.toLowerCase())
@@ -76,11 +91,17 @@ export class ProductCardsController {
   }
 
   private formatPrice(price: number): string {
-    return `$${(price / 100).toFixed(2)}`;
+    return `$${(price).toFixed(2)}`;
   }
 
   private render(): void {
     const filteredProducts = this.filterProducts();
+    if (!filteredProducts.length) {
+      this.productsContainer.innerHTML =
+        "<p>Sorry we couldn't find any products that match your search. Please try again.</p>";
+      return;
+    }
+
     const productsCards = filteredProducts
       .map(
         product =>
