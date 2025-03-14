@@ -714,7 +714,7 @@
             border-radius: 0.625rem;
           }
 
-          .product-info {
+          div.product-info {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -779,7 +779,56 @@
               align-items: center;
               gap: 0.813rem;
 
-              button {
+              & > div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.5rem;
+                background: linear-gradient(
+                  90deg,
+                  var(--secondary-color) 0%,
+                  var(--gradient-color) 100%
+                );
+                border: 2px solid var(--secondary-color);
+                border-radius: 8px;
+                transition: 0.3s all;
+
+                &:hover {
+                  border-color: var(--gradient-color);
+                  box-shadow: 0 0 12px 1px var(--hover-button-color);
+                }
+
+                & > button {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 1rem;
+                  padding: 1rem 1.5rem;
+                  background-color: transparent;
+                  border: none;
+                  font-size: 20px;
+                  font-weight: 800;
+                  color: var(--primary-color);
+
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
+
+                & > p {
+                  text-align: center;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: var(--primary-color);
+
+                  &:hover {
+                    cursor: default;
+                  }
+                }
+              }
+
+              & > button {
                 padding: 1rem 1.5rem;
                 background: linear-gradient(
                   90deg,

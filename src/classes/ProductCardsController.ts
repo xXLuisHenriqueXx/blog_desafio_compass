@@ -54,6 +54,37 @@ export class ProductCardsController {
     this.searchInputMobile.addEventListener("input", () => {
       this.render();
     });
+
+    this.productsContainer.addEventListener("click", element => {
+      const target = element.target as HTMLElement;
+      if (target.id === "more") {
+        const quantityElement = target.parentElement?.querySelector(
+          "p"
+        ) as HTMLParagraphElement;
+        if (quantityElement) {
+          const quantity = Number.parseInt(
+            quantityElement.textContent || "1",
+            10
+          );
+          quantityElement.textContent = (quantity + 1).toString();
+        }
+      }
+
+      if (target.id === "less") {
+        const quantityElement = target.parentElement?.querySelector(
+          "p"
+        ) as HTMLParagraphElement;
+        if (quantityElement) {
+          const quantity = Number.parseInt(
+            quantityElement.textContent || "1",
+            10
+          );
+          if (quantity > 1) {
+            quantityElement.textContent = (quantity - 1).toString();
+          }
+        }
+      }
+    });
   }
 
   private updateActiveFilter(selectedItem: HTMLElement): void {
@@ -123,7 +154,11 @@ export class ProductCardsController {
             </div>
             
             <div>
-              <button>+ 1 -</button>
+            <div>
+              <button id="more">+</button>
+               <p>1</p> 
+               <button id="less">-</button>
+            </div>
               <button>Add to cart</button>
             </div>
           </div>
