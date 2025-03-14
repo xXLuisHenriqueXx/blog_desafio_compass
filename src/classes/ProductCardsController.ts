@@ -96,7 +96,7 @@ export class ProductCardsController {
   }
 
   private filterProducts(): IProduct[] {
-    let filteredProducts = this.products;
+    let filteredProducts = [...this.products];
 
     const searchValue = this.searchInput.value.trim().toLowerCase();
     if (searchValue) {
@@ -116,6 +116,8 @@ export class ProductCardsController {
       filteredProducts = filteredProducts.filter(product =>
         product.categories.includes(this.currentFilter.toLowerCase())
       );
+    } else {
+      filteredProducts = this.randomIndexConfiguration(filteredProducts);
     }
 
     return filteredProducts;
@@ -123,6 +125,20 @@ export class ProductCardsController {
 
   private formatPrice(price: number): string {
     return `$${(price).toFixed(2)}`;
+  }
+
+  private randomIndexConfiguration(products: IProduct[]): IProduct[] {
+    const randomizedProducts = [...products];
+
+    for (let i = randomizedProducts.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [randomizedProducts[i], randomizedProducts[j]] = [
+        randomizedProducts[j],
+        randomizedProducts[i],
+      ];
+    }
+
+    return randomizedProducts;
   }
 
   private render(): void {
