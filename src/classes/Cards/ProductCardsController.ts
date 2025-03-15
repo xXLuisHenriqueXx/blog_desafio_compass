@@ -1,4 +1,4 @@
-import type { IProduct } from "../entities/Product";
+import type { IProduct } from "../../entities/Product";
 import { BaseCardsController } from "./BaseCardsController";
 
 export class ProductCardsController extends BaseCardsController<

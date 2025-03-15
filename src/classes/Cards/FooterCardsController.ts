@@ -1,7 +1,7 @@
-import type { ILink } from "../entities/Link";
+import type { ILink } from "../../entities/Link";
 import { BaseCardsController } from "./BaseCardsController";
 
-export class FooterLinksController extends BaseCardsController<
+export class FooterCardsController extends BaseCardsController<
   ILink,
   HTMLUListElement
 > {

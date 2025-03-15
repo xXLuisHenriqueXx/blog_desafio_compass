@@ -1,4 +1,4 @@
-import type { IService } from "../entities/Service";
+import type { IService } from "../../entities/Service";
 import { BaseCardsController } from "./BaseCardsController";
 
 export class ServicesCardsController extends BaseCardsController<

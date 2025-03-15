@@ -1,4 +1,4 @@
-import type { TEntitie } from "../types/Entitie";
+import type { TEntitie } from "../../types/Entitie";
 
 export abstract class BaseCardsController<
   T extends TEntitie,

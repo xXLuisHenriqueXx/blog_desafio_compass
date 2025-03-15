@@ -1,4 +1,4 @@
-import type { IContact } from "../entities/Contact";
+import type { IContact } from "../../entities/Contact";
 import { BaseCardsController } from "./BaseCardsController";
 
 export class ContactCardsController extends BaseCardsController<

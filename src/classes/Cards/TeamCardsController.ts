@@ -1,4 +1,4 @@
-import type { ITeamMember } from "../entities/TeamMember";
+import type { ITeamMember } from "../../entities/TeamMember";
 import { BaseCardsController } from "./BaseCardsController";
 
 export class TeamCardsController extends BaseCardsController<
