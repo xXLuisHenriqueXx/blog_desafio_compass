@@ -17,7 +17,7 @@ export const Validator = ({
   if (maxLength != null && inputValue.length > maxLength) return false;
 
   if (isEmail) {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
     if (!emailPattern.test(inputValue)) return false;
   }
 
