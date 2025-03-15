@@ -1,34 +1,18 @@
 import type { IService } from "../entities/Service";
+import { BaseCardsController } from "./BaseCardsController";
 
-export class ServicesCardsController {
-  private services: IService[] = [];
-  private servicesContainer: HTMLElement;
-
+export class ServicesCardsController extends BaseCardsController<
+  IService,
+  HTMLElement
+> {
   constructor() {
-    this.servicesContainer = document.querySelector(
-      "#services-cards"
-    ) as HTMLElement;
-    this.initialize();
+    super("#services-cards", "services_cards.json", "services");
   }
 
-  private async initialize(): Promise<void> {
-    await this.loadServices();
-    this.render();
-  }
+  protected setupListeners(): void {}
 
-  private async loadServices(): Promise<void> {
-    try {
-      const { services } = await fetch("../src/data/services_cards.json").then(
-        response => response.json()
-      );
-      this.services = services;
-    } catch (error) {
-      console.error("Erro ao carregar os serviços", error);
-    }
-  }
-
-  private render(): void {
-    const servicesCards = this.services
+  protected render(): void {
+    const servicesCards = this.elements
       .map(
         service =>
           `
@@ -49,6 +33,6 @@ export class ServicesCardsController {
       )
       .join("");
 
-    this.servicesContainer.innerHTML = servicesCards;
+    this.container.innerHTML = servicesCards;
   }
 }

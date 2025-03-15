@@ -1,34 +1,18 @@
 import type { ITeamMember } from "../entities/TeamMember";
+import { BaseCardsController } from "./BaseCardsController";
 
-export class TeamCardsController {
-  private members: ITeamMember[] = [];
-  private membersContainer: HTMLElement;
-
+export class TeamCardsController extends BaseCardsController<
+  ITeamMember,
+  HTMLElement
+> {
   constructor() {
-    this.membersContainer = document.querySelector(
-      "#team-cards"
-    ) as HTMLElement;
-    this.initialize();
+    super("#team-cards", "team_cards.json", "members");
   }
 
-  private async initialize(): Promise<void> {
-    await this.loadMembers();
-    this.render();
-  }
+  protected setupListeners(): void {}
 
-  private async loadMembers(): Promise<void> {
-    try {
-      const { members } = await fetch("../src/data/team_cards.json").then(
-        response => response.json()
-      );
-      this.members = members;
-    } catch (error) {
-      console.error("Erro ao carregar os serviços", error);
-    }
-  }
-
-  private render(): void {
-    const membersCards = this.members
+  protected render(): void {
+    const membersCards = this.elements
       .map(
         member =>
           `
@@ -97,6 +81,6 @@ export class TeamCardsController {
       )
       .join("");
 
-    this.membersContainer.innerHTML = membersCards;
+    this.container.innerHTML = membersCards;
   }
 }

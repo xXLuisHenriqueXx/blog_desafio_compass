@@ -1,34 +1,18 @@
 import type { IContact } from "../entities/Contact";
+import { BaseCardsController } from "./BaseCardsController";
 
-export class ContactCardsController {
-  private contacts: IContact[] = [];
-  private contactsContainer: HTMLElement;
-
+export class ContactCardsController extends BaseCardsController<
+  IContact,
+  HTMLDivElement
+> {
   constructor() {
-    this.contactsContainer = document.querySelector(
-      "#contact-cards"
-    ) as HTMLElement;
-    this.initialize();
+    super("#contact-cards", "contact_cards.json", "contacts");
   }
 
-  private async initialize(): Promise<void> {
-    await this.loadContacts();
-    this.render();
-  }
+  protected setupListeners(): void {}
 
-  private async loadContacts(): Promise<void> {
-    try {
-      const { contacts } = await fetch("../src/data/contact_cards.json").then(
-        response => response.json()
-      );
-      this.contacts = contacts;
-    } catch (error) {
-      console.error("Erro ao carregar os serviços", error);
-    }
-  }
-
-  private render(): void {
-    const contactsCards = this.contacts
+  protected render(): void {
+    const contactsCards = this.elements
       .map(
         contact =>
           `
@@ -54,6 +38,6 @@ export class ContactCardsController {
       )
       .join("");
 
-    this.contactsContainer.innerHTML = contactsCards;
+    this.container.innerHTML = contactsCards;
   }
 }

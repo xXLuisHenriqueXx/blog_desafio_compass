@@ -1,34 +1,19 @@
 import type { ILink } from "../entities/Link";
+import { BaseCardsController } from "./BaseCardsController";
 
-export class FooterLinksController {
-  private links: ILink[] = [];
-  private linksContainer: HTMLUListElement;
-
+export class FooterLinksController extends BaseCardsController<
+  ILink,
+  HTMLUListElement
+> {
   constructor() {
-    this.linksContainer = document.querySelector(
-      "#footer-links"
-    ) as HTMLUListElement;
-    this.initialize();
+    super("#footer-links", "footer_links.json", "footerlinks");
   }
 
-  private async initialize(): Promise<void> {
-    await this.loadLinks();
-    this.render();
-  }
+  protected setupListeners(): void {}
 
-  private async loadLinks(): Promise<void> {
-    try {
-      const { footerlinks } = await fetch("../src/data/footer_links.json").then(
-        response => response.json()
-      );
-      this.links = footerlinks;
-    } catch (error) {
-      console.error("Erro ao carregar os serviços", error);
-    }
-  }
-
-  private render(): void {
-    const linksCards = this.links
+  protected render(): void {
+    console;
+    const linksCards = this.elements
       .map(link => {
         const subLinksHtml = link.links
           .map(subLinksObj =>
@@ -48,6 +33,6 @@ export class FooterLinksController {
       })
       .join("");
 
-    this.linksContainer.innerHTML = linksCards;
+    this.container.innerHTML = linksCards;
   }
 }

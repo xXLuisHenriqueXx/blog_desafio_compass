@@ -1,16 +1,17 @@
 import type { IProduct } from "../entities/Product";
+import { BaseCardsController } from "./BaseCardsController";
 
-export class ProductCardsController {
-  private products: IProduct[] = [];
+export class ProductCardsController extends BaseCardsController<
+  IProduct,
+  HTMLDivElement
+> {
   private currentFilter = "Random";
-  private productsContainer: HTMLElement;
   private searchInput: HTMLInputElement;
   private searchInputMobile: HTMLInputElement;
 
   constructor() {
-    this.productsContainer = document.querySelector(
-      "#product-cards"
-    ) as HTMLElement;
+    super("#product-cards", "shop_products.json", "products");
+
     this.searchInput = document.querySelector(
       "#search-shop"
     ) as HTMLInputElement;
@@ -20,24 +21,7 @@ export class ProductCardsController {
     this.initialize();
   }
 
-  private async initialize(): Promise<void> {
-    await this.loadProducts();
-    this.setupListeners();
-    this.render();
-  }
-
-  private async loadProducts(): Promise<void> {
-    try {
-      const { products } = await fetch("../src/data/shop_products.json").then(
-        response => response.json()
-      );
-      this.products = products;
-    } catch (error) {
-      console.error("Erro ao carregar os produtos", error);
-    }
-  }
-
-  private setupListeners(): void {
+  protected setupListeners(): void {
     const filterItems = document.querySelectorAll("nav ul li");
     for (const item of filterItems) {
       item.addEventListener("click", () => {
@@ -55,7 +39,7 @@ export class ProductCardsController {
       this.render();
     });
 
-    this.productsContainer.addEventListener("click", element => {
+    this.container.addEventListener("click", element => {
       const target = element.target as HTMLElement;
       if (target.id === "more") {
         const quantityElement = target.parentElement?.querySelector(
@@ -96,7 +80,7 @@ export class ProductCardsController {
   }
 
   private filterProducts(): IProduct[] {
-    let filteredProducts = [...this.products];
+    let filteredProducts = [...this.elements];
 
     const searchValue = this.searchInput.value.trim().toLowerCase();
     if (searchValue) {
@@ -141,10 +125,10 @@ export class ProductCardsController {
     return randomizedProducts;
   }
 
-  private render(): void {
+  protected render(): void {
     const filteredProducts = this.filterProducts();
     if (!filteredProducts.length) {
-      this.productsContainer.innerHTML =
+      this.container.innerHTML =
         "<p>Sorry we couldn't find any products that match your search. Please try again.</p>";
       return;
     }
@@ -183,6 +167,6 @@ export class ProductCardsController {
       )
       .join("");
 
-    this.productsContainer.innerHTML = productsCards;
+    this.container.innerHTML = productsCards;
   }
 }
