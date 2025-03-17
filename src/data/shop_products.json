@@ -3,82 +3,162 @@
     {
       "id": 1,
       "name": "Multivitamin For Cat",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "A daily supplement to support your cat’s overall health and vitality.",
+      "price": 18000,
       "image": "shop/multivitamin_cat.png",
       "categories": ["cat"]
     },
     {
       "id": 2,
       "name": "Cat Food",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "High-quality cat food packed with essential nutrients for a balanced diet.",
+      "price": 22000,
       "image": "shop/cat_food.png",
       "categories": ["cat"]
     },
     {
       "id": 3,
       "name": "Dog Food",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "Nutritious and tasty food to keep your dog healthy and active.",
+      "price": 25000,
       "image": "shop/dog_food.png",
       "categories": ["dog"]
     },
     {
       "id": 4,
       "name": "Pet Plate",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "Durable and easy-to-clean plate for your pet’s meals.",
+      "price": 12000,
       "image": "shop/pet_plate.png",
-      "categories": ["cat", "dog"]
+      "categories": ["dog"]
     },
     {
       "id": 5,
       "name": "Bird Water",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "A clean and convenient water dispenser for your feathered friend.",
+      "price": 14000,
       "image": "shop/bird_water.png",
       "categories": ["bird"]
     },
     {
       "id": 6,
       "name": "Dog Water",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "Fresh and clean water supply to keep your dog hydrated.",
+      "price": 16000,
       "image": "shop/dog_water.png",
       "categories": ["dog"]
     },
     {
       "id": 7,
       "name": "Fish Food",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "Premium fish food to enhance color and health of your fish.",
+      "price": 20000,
       "image": "shop/fish_food.png",
       "categories": ["fish"]
     },
     {
       "id": 8,
       "name": "Bird Food",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "A nutritious mix of seeds and grains for your bird’s daily diet.",
+      "price": 19000,
       "image": "shop/bird_food.png",
       "categories": ["bird"]
     },
     {
       "id": 9,
       "name": "Fish Aquarium",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "A spacious and stylish aquarium for your aquatic pets.",
+      "price": 75000,
       "image": "shop/fish_aquarium.png",
       "categories": ["fish"]
     },
     {
       "id": 10,
       "name": "Cat Toy",
-      "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-      "price": 15000,
+      "description": "Fun and interactive toy to keep your cat engaged and happy.",
+      "price": 17000,
       "image": "shop/cat_toy.png",
       "categories": ["cat"]
+    },
+    {
+      "id": 11,
+      "name": "Dog Leash",
+      "description": "Durable and comfortable leash for walking your dog.",
+      "price": 20000,
+      "image": "shop/dog_leash.jpg",
+      "categories": ["dog"]
+    },
+    {
+      "id": 12,
+      "name": "Cat Scratching Post",
+      "description": "Perfect scratching post to keep your cat entertained.",
+      "price": 30000,
+      "image": "shop/cat_scratching_post.jpg",
+      "categories": ["cat"]
+    },
+    {
+      "id": 13,
+      "name": "Bird Cage",
+      "description": "Spacious and secure cage for your bird.",
+      "price": 50000,
+      "image": "shop/bird_cage.png",
+      "categories": ["bird"]
+    },
+    {
+      "id": 14,
+      "name": "Kitten Cat Food",
+      "description": "Balanced diet for kitten cats.",
+      "price": 15000,
+      "image": "shop/kitten_cat_food.png",
+      "categories": ["bird"]
+    },
+    {
+      "id": 15,
+      "name": "Puppy Dog Shampoo",
+      "description": "Gentle shampoo for a clean and shiny puppy dog coat.",
+      "price": 18000,
+      "image": "shop/puppy_dog_shampoo.jpg",
+      "categories": ["dog"]
+    },
+    {
+      "id": 16,
+      "name": "Cat Collar",
+      "description": "Adjustable and stylish collar for cats.",
+      "price": 8000,
+      "image": "shop/cat_collar.jpg",
+      "categories": ["cat"]
+    },
+    {
+      "id": 17,
+      "name": "Dog Training Pads",
+      "description": "Absorbent pads for dog training.",
+      "price": 20000,
+      "image": "shop/dog_training_pads.jpg",
+      "categories": ["dog"]
+    },
+    {
+      "id": 18,
+      "name": "Fish Tank Gravel",
+      "description": "Decorative and functional gravel for fish tanks.",
+      "price": 12000,
+      "image": "shop/fish_tank_gravel.jpg",
+      "categories": ["fish"]
+    },
+    {
+      "id": 19,
+      "name": "Bird Perch",
+      "description": "Comfortable perch for birds of all sizes.",
+      "price": 14000,
+      "image": "shop/bird_perch.jpg",
+      "categories": ["bird"]
+    },
+    {
+      "id": 20,
+      "name": "Dog Chew Toy",
+      "description": "Durable chew toy to keep dogs entertained.",
+      "price": 15000,
+      "image": "shop/dog_chew_toy.jpg",
+      "categories": ["dog"]
     }
   ]
 }
