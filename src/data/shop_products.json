@@ -101,7 +101,7 @@
       "name": "Bird Cage",
       "description": "Spacious and secure cage for your bird.",
       "price": 50000,
-      "image": "shop/bird_cage.png",
+      "image": "shop/bird_cage.jpg",
       "categories": ["bird"]
     },
     {

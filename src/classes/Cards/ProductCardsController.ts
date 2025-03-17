@@ -18,7 +18,6 @@ export class ProductCardsController extends BaseCardsController<
     this.searchInputMobile = document.querySelector(
       "#search-shop-mobile"
     ) as HTMLInputElement;
-    this.initialize();
   }
 
   protected setupListeners(): void {
